@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Punta Norte | Consultoría Integral</title>
+
+<meta name="description" content="Consultoría integral especializada en estructuración y profesionalización de empresas. Punta Norte." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   PALETA OFICIAL PUNTA NORTE
+========================= */
+:root{
+--bg:#0B1622;
+--bg-dark:#050B12;
+--panel:#1A2C3F;
+--card:#2F455D;
+
+--primary:#C9CCD1;
+--text:#FFFFFF;
+--muted:#E5E7EA;
+
+--border:rgba(201,204,209,.25);
+--radius:18px;
+--max:1150px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+font-family:'Montserrat', sans-serif;
+background:linear-gradient(180deg,var(--bg-dark),var(--bg));
+color:var(--text);
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display', serif;
+letter-spacing:-.3px;
+margin-top:0;
+}
+
+.container{
+max-width:var(--max);
+margin:auto;
+padding:0 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+position:sticky;
+top:0;
+background:rgba(5,11,18,.85);
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--border);
+z-index:100;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 0;
+}
+
+.logo{
+font-weight:800;
+font-size:18px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+padding:0;
+margin:0;
+}
+
+nav a{
+text-decoration:none;
+color:var(--muted);
+font-weight:600;
+}
+
+nav a:hover{
+color:#fff;
+}
+
+.nav-buttons{
+display:flex;
+gap:10px;
+}
+
+.btn{
+padding:10px 18px;
+border-radius:30px;
+font-weight:700;
+font-size:14px;
+border:1px solid var(--border);
+text-decoration:none;
+display:inline-block;
+}
+
+.btn-primary{
+background:var(--primary);
+color:#0B1622;
+}
+
+.btn-primary:hover{
+opacity:.9;
+}
+
+.btn-secondary{
+background:transparent;
+color:#fff;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+padding:80px 0;
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero p{
+color:var(--muted);
+font-size:16px;
+}
+
+.hero img{
+width:100%;
+border-radius:var(--radius);
+}
+
+/* =========================
+   SERVICES
+========================= */
+section{
+padding:70px 0;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:var(--panel);
+padding:25px;
+border-radius:var(--radius);
+border:1px solid var(--border);
+}
+
+.card p{
+color:var(--muted);
+font-size:14px;
+}
+
+/* =========================
+   FORM
+========================= */
+form{
+display:grid;
+gap:15px;
+margin-top:30px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:1px solid var(--border);
+background:#0F1F2E;
+color:#fff;
+font-family:'Montserrat', sans-serif;
+}
+
+textarea{min-height:120px}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-info{
+margin-top:20px;
+line-height:2;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+padding:30px 0;
+border-top:1px solid var(--border);
+text-align:center;
+font-size:14px;
+color:var(--muted);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+}
+.cards{
+grid-template-columns:1fr;
+}
+nav ul{
+display:none;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">Punta Norte</div>
+
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Áreas de Servicio</a></li>
+<li><a href="#quienes">Quiénes Somos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+<div class="nav-buttons">
+<a href="#formulario" class="btn btn-primary">Cotizá tu proyecto</a>
+<a href="#contacto" class="btn btn-secondary">Contacto</a>
+</div>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero container" id="inicio">
+
+<div>
+<h1>Consultoría integral Punta Norte</h1>
+
+<p>
+Somos una consultora especializada en la estructuración y profesionalización de empresas, orientada a acompañar a directores, accionistas y decisores en la toma de decisiones estratégicas basadas en información confiable.
+</p>
+
+<br>
+<a href="#servicios" class="btn btn-primary">Más información</a>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Acuerdo empresarial">
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="container">
+
+<h2>Áreas de Servicio</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gestión de Riesgos y Seguros</h3>
+<p>Protegemos el patrimonio de empresas y personas mediante análisis integral de riesgos y gestión estratégica de coberturas.</p>
+</div>
+
+<div class="card">
+<h3>⚖️ Servicios Legales</h3>
+<p>Asesoramiento legal integral orientado a la toma de decisiones empresariales y prevención de conflictos.</p>
+</div>
+
+<div class="card">
+<h3>📊 Servicios Contables</h3>
+<p>Soluciones contables, impositivas y financieras alineadas a los objetivos del negocio.</p>
+</div>
+
+<div class="card">
+<h3>🧠 Estructuración y Estrategia Empresarial</h3>
+<p>Reorganizamos estructuras empresariales para potenciar el crecimiento y mejorar la toma de decisiones.</p>
+</div>
+
+<div class="card">
+<h3>📣 Marketing Digital y Publicidad</h3>
+<p>Estrategias de comunicación orientadas a resultados y posicionamiento de marca.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMULARIO -->
+<section id="formulario" class="container">
+<h2>Te contactamos</h2>
+
+<form action="mailto:puntanorte@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Teléfono">
+<textarea placeholder="Mensaje"></textarea>
+<button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="container">
+
+<h2>Contacto</h2>
+
+<div class="contact-info">
+📧 Email: puntanorte@gmail.com <br>
+📱 Teléfono / WhatsApp: +54 9 11 3443-0069 <br>
+📸 Instagram: @puntanorte
+</div>
+
+<br>
+<a class="btn btn-primary" 
+href="https://wa.me/5491134430069" 
+target="_blank">
+Escribinos por WhatsApp
+</a>
+
+</section>
+
+<footer>
+© Punta Norte – Consultora Empresarial <br>
+Powered by Punta Norte
+</footer>
+
+</body>
+</html>
