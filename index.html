@@ -367,6 +367,23 @@ footer{
   background: rgba(255,255,255,.06);
   border-color: rgba(255,255,255,.15);
 }
+  /* ===== BOTÓN DESTACADO COTIZÁ ===== */
+.btn-cta{
+  background: #FFFFFF;
+  color: #0B1622;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,.25);
+  transition: .2s ease;
+}
+
+.btn-cta:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
 </style>
 </head>
 
@@ -382,14 +399,14 @@ footer{
     <nav aria-label="Navegación principal">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Áreas de Servicio</a></li>
-        <li><a href="#quienes">Quiénes Somos</a></li>
+        <li><a href="#servicios">Áreas de servicio</a></li>
+        <li><a href="#quienes">Quiénes somos</a></li>
       </ul>
     </nav>
 
     <div class="nav-buttons">
       <!-- Va a otra página -->
-      <a href="cotiza.html" class="btn btn-primary">Cotizá tu proyecto</a>
+      <a href="cotiza.html" class="btn btn-cta">Cotizá tu proyecto</a>
       <!-- ÚNICO “Contacto” en header -->
       <a href="#contacto" class="btn btn-secondary">Contacto</a>
     </div>
