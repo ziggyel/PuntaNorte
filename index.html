@@ -282,6 +282,57 @@ footer{
   .cards{grid-template-columns:1fr}
   nav ul{display:none} /* simple: oculto en móvil */
 }
+  /* ====== PRIMERA MITAD CLARA (solo header + hero) ====== */
+.top-light{
+  background: #C9CCD1;
+  color: #0B1622;
+}
+
+/* Header dentro de la sección clara */
+.top-light header{
+  background: rgba(201,204,209,.88);
+  border-bottom: 1px solid rgba(11,22,34,.18);
+}
+
+/* Links del menú (solo arriba) */
+.top-light nav a{
+  color: rgba(11,22,34,.78);
+}
+.top-light nav a:hover{
+  color:#0B1622;
+  background: rgba(11,22,34,.06);
+}
+
+/* Texto del hero (solo arriba) */
+.top-light .kicker{ color: rgba(11,22,34,.70); }
+.top-light h1{ color:#0B1622; }
+.top-light p{ color: rgba(11,22,34,.86); }
+
+/* Botones (solo arriba) */
+.top-light .btn-primary{
+  background:#0B1622;
+  color:#C9CCD1;
+  border:none;
+}
+.top-light .btn-secondary{
+  background:transparent;
+  color:#0B1622;
+  border-color: rgba(11,22,34,.25);
+}
+.top-light .btn-secondary:hover{
+  background: rgba(11,22,34,.06);
+}
+
+/* Opcional: que la imagen/box del hero combine */
+.top-light .hero-card{
+  border-color: rgba(11,22,34,.18);
+  background: rgba(255,255,255,.30);
+}
+
+/* Opcional: separación visual suave con la parte oscura */
+.top-light{
+  box-shadow: 0 18px 50px rgba(0,0,0,.25);
+}
 </style>
 </head>
 
