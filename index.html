@@ -208,8 +208,16 @@ section{padding:62px 0}
 /* CARDS (BLANCAS) */
 .cards{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap:18px;
+}
+
+.card{
+  grid-column: span 2;
+}
+
+.card-wide{
+  grid-column: span 3;
 }
 .card{
   background:#fff;
@@ -448,7 +456,7 @@ footer{
     </div>
 
     <div class="cards">
-      <article class="card">
+      <article class="card card-wide">
         <h3>Gestión de Riesgos y seguros</h3>
         <p>Protegemos el patrimonio de empresas y personas mediante un análisis integral de riesgos y la gestión estratégica de coberturas adecuadas a cada necesidad.</p>
       </article>
@@ -468,7 +476,7 @@ footer{
         <p>Diseñamos y reorganizamos estructuras para potenciar el crecimiento, optimizar procesos y mejorar la toma de decisiones estratégicas.</p>
       </article>
 
-      <article class="card">
+      <article class="card card-wide">
         <h3>Marketing digital y publicidad</h3>
         <p>Desarrollamos estrategias de comunicación y publicidad digital orientadas a resultados, posicionamiento de marca y crecimiento comercial.</p>
       </article>
