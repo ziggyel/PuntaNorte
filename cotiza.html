@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cotizá tu proyecto | Punta Norte</title>
+<meta name="description" content="Agendemos una reunión con Punta Norte. Completa el formulario para avanzar ágilmente." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0B1622;
+  --bg-dark:#050B12;
+  --primary:#C9CCD1;
+  --text:#FFFFFF;
+  --muted:#E5E7EA;
+  --ink:#0B1622;
+  --border:rgba(201,204,209,.25);
+  --radius:18px;
+  --max:900px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Montserrat', sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 520px at 12% 12%, rgba(201,204,209,.10), transparent 60%),
+    radial-gradient(700px 520px at 88% 18%, rgba(47,69,93,.35), transparent 58%),
+    linear-gradient(180deg,var(--bg-dark),var(--bg));
+  line-height:1.6;
+}
+h1,h2{
+  font-family:'Playfair Display', serif;
+  letter-spacing:-.3px;
+  margin:0 0 12px;
+}
+p{margin:0 0 12px; color: var(--muted)}
+
+.container{
+  max-width:var(--max);
+  margin:auto;
+  padding:0 20px;
+}
+
+header{
+  position:sticky;
+  top:0;
+  background:rgba(5,11,18,.82);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  z-index:50;
+}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 0;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand img{
+  width:42px;height:42px;
+  object-fit:contain;
+  border-radius:10px;
+  background: rgba(255,255,255,.04);
+  border:1px solid var(--border);
+  padding:6px;
+}
+.brand span{
+  font-weight:900;
+  color:var(--muted);
+}
+
+.btn{
+  padding:10px 18px;
+  border-radius:999px;
+  font-weight:800;
+  font-size:14px;
+  border:1px solid var(--border);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition:.18s ease;
+  white-space:nowrap;
+  text-decoration:none;
+}
+.btn-primary{
+  background:var(--primary);
+  color:var(--ink);
+  border-color: rgba(201,204,209,.45);
+}
+.btn-primary:hover{opacity:.92; transform: translateY(-1px);}
+.btn-secondary{
+  background:transparent;
+  color:#fff;
+}
+.btn-secondary:hover{background:rgba(255,255,255,.08); transform: translateY(-1px);}
+
+.main{
+  padding: 48px 0 70px;
+}
+
+.panel{
+  border-radius: var(--radius);
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  padding: 22px;
+}
+
+.form{
+  display:grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+label{
+  display:block;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+input, textarea{
+  width:100%;
+  padding:12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background: rgba(5,11,18,.55);
+  color:#fff;
+  font-family:'Montserrat', sans-serif;
+  outline:none;
+}
+input:focus, textarea:focus{
+  border-color: rgba(201,204,209,.55);
+  box-shadow: 0 0 0 4px rgba(201,204,209,.10);
+}
+textarea{min-height:120px; resize:vertical}
+
+.note{
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <!-- Siempre vuelve al inicio -->
+    <a class="brand" href="index.html#inicio" aria-label="Volver al inicio">
+      <img src="assets/logo.png" alt="Logo Punta Norte" />
+      <span>Punta Norte</span>
+    </a>
+    <div style="display:flex; gap:10px;">
+      <a class="btn btn-secondary" href="index.html#servicios">Ver servicios</a>
+      <a class="btn btn-primary" href="index.html#contacto">Contacto</a>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <h1>¡Agendemos una reunión!</h1>
+    <p>Solo unas pocas preguntas rápidas para avanzar ágilmente y conectarte:</p>
+
+    <div class="panel">
+      <!-- Simple y directo (mail). Si querés lo conectamos luego a Formspree/Netlify Forms -->
+      <form class="form" action="mailto:puntanorte@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="Nombre" type="text" required placeholder="Tu nombre" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="Email" type="email" required placeholder="tuemail@empresa.com" />
+        </div>
+
+        <div>
+          <label for="empresa">Nombre de la empresa</label>
+          <input id="empresa" name="Empresa" type="text" placeholder="Empresa" />
+        </div>
+
+        <div>
+          <label for="telefono">Número de contacto</label>
+          <input id="telefono" name="Teléfono" type="tel" placeholder="+54 9 ..." />
+        </div>
+
+        <div>
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="Comentarios" placeholder="Contanos brevemente qué necesitás"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
+
+        <div class="note">
+          *Al enviar, se abrirá tu cliente de correo con el mensaje listo. Si querés envío “real” sin mail app,
+          te lo conecto en 2 minutos a un formulario online.
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
