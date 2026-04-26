@@ -4,18 +4,77 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Punta Norte | Consultoría Integral</title>
+
 <meta name="description" content="Consultoría integral especializada en estructuración y profesionalización de empresas. Punta Norte." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#0B1622;--bg-dark:#050B12;--panel:#1A2C3F;--card:#2F455D;--primary:#C9CCD1;--accent:#79A7D8;--text:#FFFFFF;--muted:#E5E7EA;--border:rgba(201,204,209,.25);--radius:18px;--max:1150px}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:'Montserrat',sans-serif;background:linear-gradient(180deg,var(--bg-dark),var(--bg));color:var(--text);line-height:1.6} h1,h2,h3{font-family:'Montserrat',serif;letter-spacing:-.3px;margin-top:0}.container{max-width:var(--max);margin:auto;padding:0 20px}
-header{position:sticky;top:0;background:rgba(5,11,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:100}.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}.logo{font-weight:800;font-size:18px}nav ul{display:flex;list-style:none;gap:25px;padding:0;margin:0}nav a{text-decoration:none;color:var(--muted);font-weight:600}nav a:hover{color:#fff}.nav-buttons{display:flex;gap:10px}.btn{padding:10px 18px;border-radius:30px;font-weight:700;font-size:14px;border:1px solid var(--border);text-decoration:none;display:inline-block;cursor:pointer}.btn-primary{background:var(--primary);color:#0B1622}.btn-primary:hover{opacity:.9}.btn-secondary{background:transparent;color:#fff}
-.hero{padding:80px 0;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}.hero h1{font-size:clamp(48px,7vw,86px);line-height:.95;margin-bottom:14px}.hero-kicker{color:var(--accent);font-weight:900;text-transform:uppercase;letter-spacing:4px;margin-bottom:18px}.hero p{color:var(--muted);font-size:16px}.hero img{width:100%;border-radius:var(--radius);min-height:360px;object-fit:cover}
-section{padding:100px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}.card{background:var(--panel);padding:25px;border-radius:var(--radius);border:1px solid var(--border);display:flex;flex-direction:column;justify-content:space-between}.card p{color:var(--muted);font-size:14px}.card a{margin-top:10px;width:max-content}
-form{display:grid;gap:15px;margin-top:30px}input,textarea{padding:12px;border-radius:10px;border:1px solid var(--border);background:#0F1F2E;color:#fff;font-family:'Montserrat',sans-serif}textarea{min-height:120px}.contact-info{margin-top:20px;line-height:2}footer{padding:30px 0;border-top:1px solid var(--border);text-align:center;font-size:14px;color:var(--muted)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}nav ul{display:none}.nav{gap:10px}.nav-buttons{flex-wrap:wrap;justify-content:flex-end}.hero{padding:50px 0}.hero img{min-height:260px}}
+
+:root{
+--bg:#0B1622;
+--bg-dark:#050B12;
+--panel:#1A2C3F;
+--card:#2F455D;
+--primary:#C9CCD1;
+--text:#FFFFFF;
+--muted:#E5E7EA;
+--border:rgba(201,204,209,.25);
+--radius:18px;
+--max:1150px;
+}
+
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Montserrat', sans-serif;
+background:linear-gradient(180deg,var(--bg-dark),var(--bg));
+color:var(--text);
+line-height:1.6;
+}
+
+.container{
+max-width:var(--max);
+margin:auto;
+padding:0 20px;
+}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+background:rgba(5,11,18,.85);
+border-bottom:1px solid var(--border);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 0;
+}
+
+header .logo img{
+height:45px;
+width:auto;
+}
+
+/* NAV */
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+margin:0;
+padding:0;
+}
+
+nav a{
+text-decoration:none;
+color:var(--muted);
+font-weight:600;
+}
+
+/* BOTONES */
 .nav-buttons{
 display:flex;
 gap:10px;
@@ -40,17 +99,75 @@ color:#0B1622;
 background:transparent;
 color:#fff;
 }
-.logo img{
-height:40px;
-width:auto;
+
+/* HERO */
+.hero{
+padding:80px 0;
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:40px;
+align-items:center;
 }
-  h2{
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-kicker{
+color:#79A7D8;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.hero p{
+color:var(--muted);
+}
+
+/* SERVICIOS */
+section{
+padding:90px 0;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 margin-top:40px;
-margin-bottom:20px;
 }
+
+.card{
+background:var(--panel);
+padding:25px;
+border-radius:var(--radius);
+}
+
+.card p{
+color:var(--muted);
+font-size:14px;
+}
+
+/* CONTACTO */
+.contact-info{
+line-height:2;
+}
+
+#contacto .btn{
+margin-top:8px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
+nav ul{display:none}
+}
+
 </style>
 </head>
+
 <body>
+
 <header>
 <div class="container nav">
 
@@ -62,31 +179,96 @@ margin-bottom:20px;
 
 <nav>
 <ul>
-<li><a href="index.html#inicio">Inicio</a></li>
-<li><a href="index.html#servicios">Áreas de servicio</a></li>
-<li><a href="index.html#quienes">¿Quiénes somos?</a></li>
-<li><a href="index.html#contacto">Contacto</a></li>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Áreas de servicio</a></li>
+<li><a href="#quienes">¿Quiénes somos?</a></li>
+<li><a href="#contacto">Contacto</a></li>
 </ul>
 </nav>
 
 <div class="nav-buttons">
 <a href="cotiza.html" class="btn btn-primary">Cotizá tu proyecto</a>
-<a href="index.html#contacto" class="btn btn-secondary">Contacto</a>
+<a href="#contacto" class="btn btn-secondary">Contacto</a>
 </div>
 
 </div>
 </header>
-<section class="hero container" id="inicio"><div><h1>Punta Norte</h1><div class="hero-kicker">Consultoría integral</div><p>Somos una consultora especializada en estructuración y profesionalización de empresas.</p><p>Brindamos soluciones tradicionales (legal, contable y seguros de riesgo), como también innovación de vanguardia (marketing digital, publicidad, profiling, estrategia y optimización a medida), aplicando herramientas de última generación.</p><p>Nuestra misión es acompañar a dueños, directores, accionistas y gerentes en la toma de decisiones inteligentes y potenciadoras, llevando cada negocio al siguiente nivel.</p><p>Trabajamos con PyMEs y grandes unidades de negocio.</p><br><a href="#servicios" class="btn btn-primary">Más información</a></div><div><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Acuerdo empresarial"></div></section>
-<section id="servicios" class="container"><h2>Áreas de servicio</h2><div class="cards">
-<div class="card"><div><h3>Gestión de riesgos y seguros</h3><p>Protegemos el patrimonio de empresas y personas mediante análisis integral de riesgos y gestión estratégica de coberturas.</p></div><a href="gestion-riesgos-seguros.html" class="btn btn-primary">Ver más</a></div>
-<div class="card"><div><h3>Servicios legales</h3><p>Asesoramiento legal integral orientado a la toma de decisiones empresariales y prevención de conflictos.</p></div><a href="servicios-legales.html" class="btn btn-primary">Ver más</a></div>
-<div class="card"><div><h3>Servicios contables</h3><p>Soluciones contables, impositivas y financieras alineadas a los objetivos del negocio.</p></div><a href="servicios-contables.html" class="btn btn-primary">Ver más</a></div>
-<div class="card"><div><h3>Estructuración y estrategia empresarial</h3><p>Reorganizamos estructuras empresariales para potenciar el crecimiento y mejorar la toma de decisiones.</p></div><a href="estrategia-empresarial.html" class="btn btn-primary">Ver más</a></div>
-<div class="card"><div><h3>Marketing digital y publicidad</h3><p>Estrategias de comunicación orientadas a resultados y posicionamiento de marca.</p></div><a href="marketing-digital.html" class="btn btn-primary">Ver más</a></div>
-</div></section>
-<section id="quienes" class="container"><h2>¿Quiénes somos?</h2><p>En Punta Norte acompañamos a empresas, PyMEs y grandes unidades de negocio con soluciones profesionales, estratégicas y orientadas al crecimiento.</p></section>
-<section id="formulario" class="container"><h2>Te contactamos</h2><form action="mailto:puntanorte@gmail.com" method="post" enctype="text/plain"><input type="text" name="nombre" placeholder="Nombre" required><input type="email" name="email" placeholder="Email" required><input type="tel" name="telefono" placeholder="Teléfono"><textarea name="mensaje" placeholder="Mensaje"></textarea><button type="submit" class="btn btn-primary">Enviar</button></form></section>
-<section id="contacto" class="container"><h2>Contacto</h2><div class="contact-info">📧 Email: puntanorte@gmail.com <br>📱 Teléfono / WhatsApp: +54 11 2286-6933 <br>📸 Instagram: @puntanorte.ar</div><br><a class="btn btn-primary" href="https://wa.me/541122866933" target="_blank" style="margin-top:10px;"> >Escribinos por WhatsApp  </a></section>
-<footer>© Punta Norte - Consultora empresarial <br>Powered by Punta Norte</footer>
+
+<!-- HERO -->
+<section class="hero container" id="inicio">
+
+<div>
+<h1>Punta Norte</h1>
+<div class="hero-kicker">Consultoría integral</div>
+
+<p>Somos una consultora especializada en estructuración y profesionalización de empresas.</p>
+
+<p>Brindamos soluciones tradicionales (legal, contable y seguros de riesgo), como también innovación de vanguardia.</p>
+
+<a href="#servicios" class="btn btn-primary">Más información</a>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:18px;">
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="container">
+
+<h2>Áreas de servicio</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gestión de riesgos y seguros</h3>
+<p>Protegemos el patrimonio de empresas.</p>
+<a href="gestion-riesgos-seguros.html" class="btn btn-primary">Ver más</a>
+</div>
+
+<div class="card">
+<h3>Servicios legales</h3>
+<p>Asesoramiento legal integral.</p>
+<a href="servicios-legales.html" class="btn btn-primary">Ver más</a>
+</div>
+
+<div class="card">
+<h3>Servicios contables</h3>
+<p>Soluciones contables y financieras.</p>
+<a href="servicios-contables.html" class="btn btn-primary">Ver más</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- QUIENES -->
+<section id="quienes" class="container">
+<h2>¿Quiénes somos?</h2>
+<p>En Punta Norte acompañamos a empresas con soluciones estratégicas orientadas al crecimiento.</p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="container">
+
+<h2>Contacto</h2>
+
+<div class="contact-info">
+📧 Email: puntanorte@gmail.com <br>
+📱 Teléfono / WhatsApp: +54 11 2286-6933 <br>
+📸 Instagram: @puntanorte.ar
+</div>
+
+<a class="btn btn-primary" href="https://wa.me/541122866933" target="_blank">
+Escribinos por WhatsApp
+</a>
+
+</section>
+
+<footer>
+© Punta Norte – Consultora Empresarial
+</footer>
+
 </body>
 </html>
