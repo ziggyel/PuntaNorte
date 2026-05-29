@@ -25,6 +25,33 @@ margin-bottom:16px;
   max-width:180px !important;
   display:block;
 } 
+ .service-form{
+display:grid;
+gap:14px;
+margin-top:18px;
+}
+
+.service-form input,
+.service-form textarea{
+width:100%;
+padding:12px;
+border-radius:12px;
+border:1px solid var(--border);
+background:#0F1F2E;
+color:#fff;
+font-family:'Montserrat',sans-serif;
+outline:none;
+}
+
+.service-form textarea{
+min-height:120px;
+resize:none;
+}
+
+.service-form button{
+width:100%;
+margin-top:6px;
+}
 </style>
 </head>
 <body>
@@ -57,14 +84,29 @@ margin-bottom:16px;
 <a href="index.html#servicios" class="btn btn-secondary">← Volver a servicios</a>
 <div class="service-grid">
 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80" alt="Imagen vinculada a marketing digital y publicidad">
-<div class="box">
-<h1>Marketing Digital y publicidad</h1>
-<p class="highlight">Nuestra unidad especial de marketing y publicidad aplica técnicas, herramientas y habilidades de última generación, llevando a tu negocio al siguiente nivel.</p>
 <div class="contact-box" id="contacto-servicio">
-<h2>Cotizá tu consulta</h2>
-<p>Dejanos tu mensaje y te contactamos para brindarte una solución a medida.</p>
-<div class="contact-info">📧 puntanorte@gmail.com<br>📱 +54 11 2286-6933<br>📸 @puntanorte.ar</div>
-<div class="contact-actions"><a class="btn btn-primary" href="https://wa.me/541122866933" target="_blank">Escribinos por WhatsApp</a><a class="btn btn-secondary" href="mailto:puntanorte@gmail.com?subject=Consulta%20-%20Marketing%20Digital%20y%20Publicidad">Enviar email</a></div>
+
+<h2>Cotizá tu proyecto</h2>
+
+<p>Solo unas pocas preguntas rápidas para avanzar ágilmente y conectarte.</p>
+
+<form class="service-form" action="mailto:puntanorte@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" name="Nombre" required placeholder="Tu nombre">
+
+<input type="email" name="Email" required placeholder="tuemail@empresa.com">
+
+<input type="text" name="Empresa" placeholder="Empresa">
+
+<input type="tel" name="Teléfono" placeholder="+54 9 ...">
+
+<textarea name="Comentarios" placeholder="Contanos brevemente qué necesitás"></textarea>
+
+<button class="btn btn-primary" type="submit">Enviar</button>
+
+</form>
+
+</div>
 </div>
 </div>
 </div>
